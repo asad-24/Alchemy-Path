@@ -4,7 +4,7 @@ export default function Terms() {
   return (
     <Section narrow className="py-32 md:py-48">
       <div className="max-w-3xl mx-auto">
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-20 text-center tracking-tight">
+        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-20 text-centre tracking-tight">
           Terms & Conditions
         </h1>
 
@@ -41,10 +41,10 @@ export default function Terms() {
                 Payment is required in full before coaching services begin, unless otherwise agreed upon in writing.
               </p>
               <p>
-                <strong className="font-medium">No refunds:</strong> Due to the personalized nature of 1:1 coaching, all payments are non-refundable once services have commenced. By enrolling, you commit to the full coaching program.
+                <strong className="font-medium">No refunds:</strong> Due to the personalised nature of 1:1 coaching, all payments are non-refundable once services have commenced. By enrolling, you commit to the full coaching programme.
               </p>
               <p>
-                Payment plans may be available on a case-by-case basis and must be agreed upon prior to starting the program.
+                Payment plans may be available on a case-by-case basis and must be agreed upon prior to starting the programme.
               </p>
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function Terms() {
             <h2 className="font-serif text-2xl md:text-4xl tracking-tight">Limitation of Liability</h2>
             <div className="space-y-6 opacity-75">
               <p>
-                The Alchemy Path and its coach(es) are not liable for any decisions, actions, or outcomes resulting from participation in coaching programs.
+                The Alchemy Path and its coach(es) are not liable for any decisions, actions, or outcomes resulting from participation in coaching programmes.
               </p>
               <p>
                 You acknowledge that personal transformation requires your active participation and commitment, and that results cannot be guaranteed.
@@ -117,7 +117,7 @@ export default function Terms() {
           </div>
 
           {/* Last Updated */}
-          <div className="text-center pt-12 border-t border-[#0B0B0B]/10">
+          <div className="text-centre pt-12 border-t border-[#0B0B0B]/10">
             <p className="text-sm opacity-50">
               Last updated: April 2026
             </p>
