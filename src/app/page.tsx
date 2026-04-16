@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 import ScrollFade from "@/components/ScrollFade";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -72,11 +73,11 @@ export default function Home() {
         <div className="gold-divider"></div>
       </div>
 
-      {/* Authority Section */}
+      {/* Authority Section with Image */}
       <Section background="dark" narrow className="">
-        <div className="max-w-3xl mx-auto text-center space-y-12">
+        <div className="max-w-6xl mx-auto space-y-16">
           <ScrollFade delay={0}>
-            <div>
+            <div className="text-center">
               <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-6 gradient-text tracking-tight">
                 I'm Dessy Ivanova
               </h2>
@@ -86,25 +87,42 @@ export default function Home() {
             </div>
           </ScrollFade>
           
-          <div className="space-y-10 text-lg md:text-xl leading-relaxed opacity-85 font-light pt-8">
-            <ScrollFade delay={200}>
-              <p>
-                I work with women who are done settling.<br />
-                Done playing small. Done pretending they don't want what they want.
-              </p>
-            </ScrollFade>
+          <div className="grid md:grid-cols-2 gap-16 items-center pt-8">
+            {/* Text Content */}
+            <div className="space-y-10 text-lg md:text-xl leading-relaxed opacity-85 font-light">
+              <ScrollFade delay={200}>
+                <p>
+                  I work with women who are done settling.<br />
+                  Done playing small. Done pretending they don't want what they want.
+                </p>
+              </ScrollFade>
+              
+              <ScrollFade delay={400}>
+                <p>
+                  This isn't about fixing you.<br />
+                  You're not broken.
+                </p>
+              </ScrollFade>
+              
+              <ScrollFade delay={600}>
+                <p>
+                  This is about identity. About stepping into the version of you who already has everything you desire and living from that place.
+                </p>
+              </ScrollFade>
+            </div>
             
-            <ScrollFade delay={400}>
-              <p>
-                This isn't about fixing you.<br />
-                You're not broken.
-              </p>
-            </ScrollFade>
-            
-            <ScrollFade delay={600}>
-              <p>
-                This is about identity. About stepping into the version of you who already has everything you desire and living from that place.
-              </p>
+            {/* Image - girl-with-candle */}
+            <ScrollFade delay={300}>
+              <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 via-transparent to-[#0B0B0B]/30 z-10"></div>
+                <Image 
+                  src="/girl-with-candle.jpeg"
+                  alt="Contemplation and inner transformation"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </ScrollFade>
           </div>
         </div>

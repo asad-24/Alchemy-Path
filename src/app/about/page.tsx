@@ -86,49 +86,66 @@ export default function About() {
         <div className="gold-divider"></div>
       </div>
 
-      {/* What is The Alchemy Path */}
-      <Section narrow className="">
-        <div className="max-w-3xl mx-auto text-center space-y-16">
-          <ScrollFade delay={0}>
-            <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-16 gradient-text tracking-tight">
-              What is The Alchemy Path
-            </h2>
-          </ScrollFade>
-          
-          <div className="space-y-8 text-lg md:text-xl leading-relaxed font-light">
-            <ScrollFade delay={200}>
-              <p>
-                The Alchemy Path is a journey of complete transformation.
-              </p>
+      {/* What is The Alchemy Path - With Background Image */}
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image 
+            src="/boyandgirl.jpeg"
+            alt="Connection and transformation journey"
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/75 via-[#0B0B0B]/70 to-[#0B0B0B]/80"></div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-3xl mx-auto px-8 md:px-16 text-center py-20">
+          <div className="space-y-16">
+            <ScrollFade delay={0}>
+              <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-16 gradient-text tracking-tight">
+                What is The Alchemy Path
+              </h2>
             </ScrollFade>
             
-            <ScrollFade delay={300}>
-              <p>
-                It's not about fixing what's broken.<br />
-                It's about becoming someone entirely new.
-              </p>
-            </ScrollFade>
-            
-            <ScrollFade delay={400}>
-              <p>
-                Through deep identity work, we don't just shift your mindset.
-              </p>
-            </ScrollFade>
-            
-            <ScrollFade delay={500}>
-              <p>
-                We rebuild who you are at the core.
-              </p>
-            </ScrollFade>
-            
-            <ScrollFade delay={600}>
-              <p className="text-[#C6A86B] font-medium">
-                This is for women ready to stop trying and start being.
-              </p>
-            </ScrollFade>
+            <div className="space-y-8 text-lg md:text-xl leading-relaxed font-light text-[#F7F5F2]">
+              <ScrollFade delay={200}>
+                <p>
+                  The Alchemy Path is a journey of complete transformation.
+                </p>
+              </ScrollFade>
+              
+              <ScrollFade delay={300}>
+                <p>
+                  It's not about fixing what's broken.<br />
+                  It's about becoming someone entirely new.
+                </p>
+              </ScrollFade>
+              
+              <ScrollFade delay={400}>
+                <p>
+                  Through deep identity work, we don't just shift your mindset.
+                </p>
+              </ScrollFade>
+              
+              <ScrollFade delay={500}>
+                <p>
+                  We rebuild who you are at the core.
+                </p>
+              </ScrollFade>
+              
+              <ScrollFade delay={600}>
+                <p className="text-[#C6A86B] font-medium">
+                  This is for women ready to stop trying and start being.
+                </p>
+              </ScrollFade>
+            </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Gold Divider */}
       <div className="">
