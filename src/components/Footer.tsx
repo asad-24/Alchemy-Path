@@ -86,7 +86,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="pt-12 border-t border-[#F7F5F2]/5 text-centre">
+        <div className="pt-12 border-t border-[#F7F5F2]/5 text-center">
           <p className="text-xs opacity-50 tracking-wider font-light">
             © {new Date().getFullYear()} The Alchemy Path. All rights reserved.
           </p>

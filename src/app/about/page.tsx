@@ -86,62 +86,45 @@ export default function About() {
         <div className="gold-divider"></div>
       </div>
 
-      {/* What is The Alchemy Path - Image Right, Text Left */}
+      {/* What is The Alchemy Path */}
       <Section narrow className="">
-        <div className="max-w-6xl mx-auto space-y-16">
+        <div className="max-w-3xl mx-auto text-center space-y-16">
           <ScrollFade delay={0}>
-            <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-16 gradient-text tracking-tight text-center">
+            <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-16 gradient-text tracking-tight">
               What is The Alchemy Path
             </h2>
           </ScrollFade>
           
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            {/* Text Content */}
-            <div className="space-y-8 text-lg md:text-xl leading-relaxed font-light">
-              <ScrollFade delay={200}>
-                <p>
-                  The Alchemy Path is a journey of complete transformation.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={300}>
-                <p>
-                  It's not about fixing what's broken.<br />
-                  It's about becoming someone entirely new.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={400}>
-                <p>
-                  Through deep identity work, we don't just shift your mindset.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={500}>
-                <p>
-                  We rebuild who you are at the core.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={600}>
-                <p className="text-[#C6A86B] font-medium">
-                  This is for women ready to stop trying and start being.
-                </p>
-              </ScrollFade>
-            </div>
+          <div className="space-y-8 text-lg md:text-xl leading-relaxed font-light">
+            <ScrollFade delay={200}>
+              <p>
+                The Alchemy Path is a journey of complete transformation.
+              </p>
+            </ScrollFade>
             
-            {/* Image - Soft feminine lighting */}
             <ScrollFade delay={300}>
-              <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/10 to-transparent z-10"></div>
-                <Image 
-                  src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&q=80"
-                  alt="Soft feminine energy and transformation"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+              <p>
+                It's not about fixing what's broken.<br />
+                It's about becoming someone entirely new.
+              </p>
+            </ScrollFade>
+            
+            <ScrollFade delay={400}>
+              <p>
+                Through deep identity work, we don't just shift your mindset.
+              </p>
+            </ScrollFade>
+            
+            <ScrollFade delay={500}>
+              <p>
+                We rebuild who you are at the core.
+              </p>
+            </ScrollFade>
+            
+            <ScrollFade delay={600}>
+              <p className="text-[#C6A86B] font-medium">
+                This is for women ready to stop trying and start being.
+              </p>
             </ScrollFade>
           </div>
         </div>
@@ -152,64 +135,47 @@ export default function About() {
         <div className="gold-divider"></div>
       </div>
 
-      {/* The Shift - Image Left, Text Right */}
+      {/* The Shift */}
       <Section background="dark" narrow className="">
-        <div className="max-w-6xl mx-auto space-y-16">
+        <div className="max-w-3xl mx-auto text-center space-y-16">
           <ScrollFade delay={0}>
-            <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-16 gradient-text tracking-tight text-center">
+            <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-16 gradient-text tracking-tight">
               The Shift
             </h2>
           </ScrollFade>
           
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            {/* Image - Calm, minimal luxury */}
-            <ScrollFade delay={200}>
-              <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl order-2 md:order-1">
-                <div className="absolute inset-0 bg-linear-to-br from-transparent to-[#0B0B0B]/20 z-10"></div>
-                <Image 
-                  src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80"
-                  alt="Elegant transformation and growth"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+          <div className="space-y-8 text-lg md:text-xl leading-relaxed font-light opacity-90">
+            <ScrollFade delay={300}>
+              <p>
+                The shift happened when I stopped trying to <em className="italic">become</em> her.
+              </p>
             </ScrollFade>
             
-            {/* Text Content */}
-            <div className="space-y-8 text-lg md:text-xl leading-relaxed font-light opacity-90 order-1 md:order-2">
-              <ScrollFade delay={300}>
-                <p>
-                  The shift happened when I stopped trying to <em className="italic">become</em> her.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={400}>
-                <p>
-                  And started <em className="italic">being</em> her.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={500}>
-                <p>
-                  Not a better version of me.<br />
-                  A completely different identity.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={600}>
-                <p>
-                  Someone who didn't question her worth.<br />
-                  Someone who didn't need permission.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={700}>
-                <p className="text-[#C6A86B]">
-                  Someone who already knew she was enough.
-                </p>
-              </ScrollFade>
-            </div>
+            <ScrollFade delay={400}>
+              <p>
+                And started <em className="italic">being</em> her.
+              </p>
+            </ScrollFade>
+            
+            <ScrollFade delay={500}>
+              <p>
+                Not a better version of me.<br />
+                A completely different identity.
+              </p>
+            </ScrollFade>
+            
+            <ScrollFade delay={600}>
+              <p>
+                Someone who didn't question her worth.<br />
+                Someone who didn't need permission.
+              </p>
+            </ScrollFade>
+            
+            <ScrollFade delay={700}>
+              <p className="text-[#C6A86B]">
+                Someone who already knew she was enough.
+              </p>
+            </ScrollFade>
           </div>
         </div>
       </Section>

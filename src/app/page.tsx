@@ -1,9 +1,6 @@
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 import ScrollFade from "@/components/ScrollFade";
-import ImageSection from "@/components/ImageSection";
-import ImageCTA from "@/components/ImageCTA";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -75,11 +72,11 @@ export default function Home() {
         <div className="gold-divider"></div>
       </div>
 
-      {/* Authority Section with Image */}
+      {/* Authority Section */}
       <Section background="dark" narrow className="">
-        <div className="max-w-6xl mx-auto space-y-16">
+        <div className="max-w-3xl mx-auto text-center space-y-12">
           <ScrollFade delay={0}>
-            <div className="text-center">
+            <div>
               <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-6 gradient-text tracking-tight">
                 I'm Dessy Ivanova
               </h2>
@@ -89,42 +86,25 @@ export default function Home() {
             </div>
           </ScrollFade>
           
-          <div className="grid md:grid-cols-2 gap-16 items-center pt-8">
-            {/* Text Content */}
-            <div className="space-y-10 text-lg md:text-xl leading-relaxed opacity-85 font-light">
-              <ScrollFade delay={200}>
-                <p>
-                  I work with women who are done settling.<br />
-                  Done playing small. Done pretending they don't want what they want.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={400}>
-                <p>
-                  This isn't about fixing you.<br />
-                  You're not broken.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={600}>
-                <p>
-                  This is about identity. About stepping into the version of you who already has everything you desire and living from that place.
-                </p>
-              </ScrollFade>
-            </div>
+          <div className="space-y-10 text-lg md:text-xl leading-relaxed opacity-85 font-light pt-8">
+            <ScrollFade delay={200}>
+              <p>
+                I work with women who are done settling.<br />
+                Done playing small. Done pretending they don't want what they want.
+              </p>
+            </ScrollFade>
             
-            {/* Unsplash Image - Elegant feminine portrait */}
-            <ScrollFade delay={300}>
-              <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-linear-to-br from-transparent to-[#0B0B0B]/20 z-10"></div>
-                <Image 
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80"
-                  alt="Confident woman embodying transformation"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+            <ScrollFade delay={400}>
+              <p>
+                This isn't about fixing you.<br />
+                You're not broken.
+              </p>
+            </ScrollFade>
+            
+            <ScrollFade delay={600}>
+              <p>
+                This is about identity. About stepping into the version of you who already has everything you desire and living from that place.
+              </p>
             </ScrollFade>
           </div>
         </div>
@@ -139,14 +119,14 @@ export default function Home() {
       <Section narrow className="">
         <div className="max-w-3xl mx-auto space-y-16">
           <ScrollFade delay={0}>
-            <div className="text-centre">
+            <div className="text-center">
               <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-4 tracking-tight gradient-text">
                 1:1 Private Coaching
               </h2>
             </div>
           </ScrollFade>
           
-          <div className="space-y-10 text-centre">
+          <div className="space-y-10 text-center">
             <ScrollFade delay={200}>
               <p className="text-xl md:text-2xl leading-relaxed font-light">
                 This is deep, transformative work.<br />
@@ -169,7 +149,7 @@ export default function Home() {
           </div>
 
           <ScrollFade delay={800}>
-            <div className="text-centre pt-8">
+            <div className="text-center pt-8">
               <Button href="/work-with-me" variant="primary">
                 Learn More
               </Button>
@@ -185,7 +165,7 @@ export default function Home() {
 
       {/* Final CTA Section */}
       <Section background="dark" narrow className="">
-        <div className="max-w-3xl mx-auto text-centre space-y-12">
+        <div className="max-w-3xl mx-auto text-center space-y-12">
           <ScrollFade delay={0}>
             <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight tracking-tight gradient-text">
               You already know you're meant for more.
@@ -220,12 +200,6 @@ export default function Home() {
           </ScrollFade>
         </div>
       </Section>
-
-      {/* Image Section - Only on Home Page */}
-      <ImageSection />
-      
-      {/* Image CTA - Only on Home Page */}
-      <ImageCTA />
     </>
   );
 }

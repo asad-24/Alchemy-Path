@@ -1,14 +1,13 @@
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 import ScrollFade from "@/components/ScrollFade";
-import Image from "next/image";
 
 export default function WorkWithMe() {
   return (
     <>
       {/* Hero Section */}
       <Section narrow className="">
-        <div className="text-centre space-y-10">
+        <div className="text-center space-y-10">
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight gradient-text">
             Work With Me
           </h1>
@@ -39,7 +38,7 @@ export default function WorkWithMe() {
             </div>
           </ScrollFade>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid  gap-16 items-center">
             {/* Content Column */}
             <div className="space-y-16">
               {/* What's Included */}
@@ -102,20 +101,6 @@ export default function WorkWithMe() {
                 </div>
               </ScrollFade>
             </div>
-            
-            {/* Unsplash Image - Luxury, confident woman */}
-            <ScrollFade delay={300}>
-              <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-linear-to-br from-transparent to-[#0B0B0B]/30 z-10"></div>
-                <Image 
-                  src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80"
-                  alt="Embodying your highest self"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </ScrollFade>
           </div>
         </div>
       </Section>
@@ -125,35 +110,19 @@ export default function WorkWithMe() {
         <div className="gold-divider"></div>
       </div>
 
-      {/* Who This Is For - With Image */}
+      {/* Who This Is For */}
       <Section narrow className="">
-        <div className="max-w-6xl mx-auto space-y-2">
+        <div className="max-w-2xl mx-auto space-y-2">
           <ScrollFade delay={0}>
             <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-center tracking-tight gradient-text mb-16">
               This Is For You If
             </h2>
           </ScrollFade>
           
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            {/* Unsplash Image - Empowered woman */}
-            <ScrollFade delay={200}>
-              <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl order-2 md:order-1">
-                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/10 to-transparent z-10"></div>
-                <Image 
-                  src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&q=80"
-                  alt="Woman ready for transformation"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+          <div className="space-y-8 text-base md:text-lg leading-relaxed font-light">
+            <ScrollFade delay={300}>
+              <p>✧ You're done playing small and pretending you don't want what you want</p>
             </ScrollFade>
-            
-            {/* Text Content */}
-            <div className="space-y-8 text-base md:text-lg leading-relaxed font-light order-1 md:order-2">
-              <ScrollFade delay={300}>
-                <p>✧ You're done playing small and pretending you don't want what you want</p>
-              </ScrollFade>
               <ScrollFade delay={400}>
                 <p>✧ You know there's a bigger version of your life waiting and you're ready to step into it</p>
               </ScrollFade>
@@ -168,7 +137,6 @@ export default function WorkWithMe() {
               </ScrollFade>
             </div>
           </div>
-        </div>
       </Section>
 
       {/* Gold Divider */}
@@ -178,7 +146,7 @@ export default function WorkWithMe() {
 
       {/* Investment Note */}
       <Section background="dark" narrow className="">
-        <div className="max-w-2xl mx-auto text-centre space-y-2">
+        <div className="max-w-2xl mx-auto text-center space-y-2">
           <ScrollFade delay={0}>
             <p className="text-base md:text-lg opacity-75 leading-relaxed font-light">
               This is high-level, personalised coaching.<br />
@@ -201,7 +169,7 @@ export default function WorkWithMe() {
 
       {/* Final CTA */}
       <Section narrow className="">
-        <div className="max-w-2xl mx-auto text-centre space-y-2">
+        <div className="max-w-2xl mx-auto text-center space-y-2">
           <ScrollFade delay={0}>
             <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight tracking-tight gradient-text">
               Ready to begin?

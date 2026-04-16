@@ -4,7 +4,7 @@ export default function Terms() {
   return (
     <Section narrow className="py-32 md:py-48">
       <div className="max-w-3xl mx-auto">
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-20 text-centre tracking-tight">
+        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-20 text-center tracking-tight">
           Terms & Conditions
         </h1>
 
@@ -117,7 +117,7 @@ export default function Terms() {
           </div>
 
           {/* Last Updated */}
-          <div className="text-centre pt-12 border-t border-[#0B0B0B]/10">
+          <div className="text-center pt-12 border-t border-[#0B0B0B]/10">
             <p className="text-sm opacity-50">
               Last updated: April 2026
             </p>
