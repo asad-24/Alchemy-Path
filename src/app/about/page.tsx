@@ -340,14 +340,14 @@ export default function About() {
       </div>
 
       {/* Transformational Image Section */}
-      <section className="relative w-full">
-        <div className="relative w-full h-[70vh] md:h-[80vh] lg:h-[85vh]">
+      <section className="relative w-full bg-[#0B0B0B] flex items-center justify-center py-12">
+        <div className="relative w-[70%] h-[40vh] md:h-[50vh] lg:h-[70vh] mx-auto">
           <Image 
             src="/transformational.jpeg"
             alt="Your transformation awaits"
             fill
-            className="object-cover"
-            sizes="100vw"
+            className="object-contain"
+            sizes="70vw"
             priority
           />
         </div>
