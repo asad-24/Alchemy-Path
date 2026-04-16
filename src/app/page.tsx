@@ -116,7 +116,7 @@ export default function Home() {
               <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
                 <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 via-transparent to-[#0B0B0B]/30 z-10"></div>
                 <Image 
-                  src="/girl-with-candle.jpeg"
+                  src="/owner.jpg"
                   alt="Contemplation and inner transformation"
                   fill
                   className="object-cover"
