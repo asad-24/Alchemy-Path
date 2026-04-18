@@ -91,7 +91,7 @@ export default function About() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image 
-            src="/boyandgirl.jpeg"
+            src="/alcamy.jpeg"
             alt="Connection and transformation journey"
             fill
             className="object-cover"
@@ -99,12 +99,12 @@ export default function About() {
             priority
           />
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/75 via-[#0B0B0B]/70 to-[#0B0B0B]/80"></div>
+          <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/80 via-[#0B0B0B]/75 to-[#0B0B0B]/85"></div>
         </div>
         
         {/* Content */}
-        <div className="relative z-10 max-w-3xl mx-auto px-8 md:px-16 text-center py-20">
-          <div className="space-y-16">
+        <div className="relative z-10 max-w-4xl mx-auto px-8 md:px-16 text-center py-20">
+          <div className="space-y-12">
             <ScrollFade delay={0}>
               <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-16 gradient-text tracking-tight">
                 What is The Alchemy Path
@@ -138,7 +138,7 @@ export default function About() {
               </ScrollFade>
               
               <ScrollFade delay={600}>
-                <p className="text-[#C6A86B] font-medium">
+                <p className="text-[#C6A86B] font-medium text-xl md:text-2xl">
                   This is for women ready to stop trying and start being.
                 </p>
               </ScrollFade>

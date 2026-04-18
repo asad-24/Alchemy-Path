@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 import ScrollFade from "@/components/ScrollFade";
+import Image from "next/image";
 
 export default function WorkWithMe() {
   return (
@@ -112,17 +113,19 @@ export default function WorkWithMe() {
 
       {/* Who This Is For */}
       <Section narrow className="">
-        <div className="max-w-2xl mx-auto space-y-2">
+        <div className="max-w-6xl mx-auto space-y-2">
           <ScrollFade delay={0}>
             <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-center tracking-tight gradient-text mb-16">
               This Is For You If
             </h2>
           </ScrollFade>
           
-          <div className="space-y-8 text-base md:text-lg leading-relaxed font-light">
-            <ScrollFade delay={300}>
-              <p>✧ You're done playing small and pretending you don't want what you want</p>
-            </ScrollFade>
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            {/* Text Column - Left Side */}
+            <div className="space-y-8 text-base md:text-lg leading-relaxed font-light">
+              <ScrollFade delay={300}>
+                <p>✧ You're done playing small and pretending you don't want what you want</p>
+              </ScrollFade>
               <ScrollFade delay={400}>
                 <p>✧ You know there's a bigger version of your life waiting and you're ready to step into it</p>
               </ScrollFade>
@@ -136,7 +139,22 @@ export default function WorkWithMe() {
                 <p>✧ You're committed to yourself and your transformation</p>
               </ScrollFade>
             </div>
+            
+            {/* Image Column - Right Side */}
+            <ScrollFade delay={300}>
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
+                <Image 
+                  src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88"
+                  alt="Empowered woman ready for transformation"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </ScrollFade>
           </div>
+        </div>
       </Section>
 
       {/* Gold Divider */}
