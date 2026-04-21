@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,7 +8,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-3xl mb-6 tracking-tight">The Alchemy Path</h3>
+            <div className="flex items-center gap-3 mb-6">
+              <Image 
+                src="/logo.svg" 
+                alt="The Alchemy Path" 
+                width={32} 
+                height={32}
+                className="opacity-90"
+              />
+              <h3 className="font-serif text-3xl tracking-tight">The Alchemy Path</h3>
+            </div>
             <p className="text-sm opacity-60 leading-relaxed font-light mb-6">
               For women who feel there is more and refuse to settle for less.
             </p>

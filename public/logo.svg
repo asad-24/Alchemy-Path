@@ -1,0 +1,12 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Elegant circular alchemical symbol -->
+  <circle cx="24" cy="24" r="22" stroke="#C6A86B" stroke-width="1.5"/>
+  <circle cx="24" cy="24" r="16" stroke="#C6A86B" stroke-width="1"/>
+  
+  <!-- Triangles representing transformation (upward and downward pointing) -->
+  <path d="M24 12 L30 22 L18 22 Z" stroke="#C6A86B" stroke-width="1.2" fill="none"/>
+  <path d="M24 36 L18 26 L30 26 Z" stroke="#C6A86B" stroke-width="1.2" fill="none"/>
+  
+  <!-- Center point representing unity -->
+  <circle cx="24" cy="24" r="2.5" fill="#C6A86B"/>
+</svg>

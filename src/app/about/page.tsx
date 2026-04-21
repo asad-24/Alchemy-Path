@@ -22,14 +22,14 @@ export default function About() {
             
             <div className="max-w-3xl mx-auto space-y-8 animate-fade-in-up">
               <p className="text-2xl md:text-3xl lg:text-4xl leading-relaxed font-light opacity-90 text-[#F7F5F2]">
-                You weren't meant to shrink.<br />
+                You were not meant to shrink.<br />
                 You were meant to transform.
               </p>
               
               <div className="gold-divider my-12"></div>
               
               <p className="text-lg md:text-xl leading-relaxed font-light opacity-75 max-w-2xl mx-auto text-[#F7F5F2]">
-                I'm Dessy Ivanova, and I help women step into the identity of who they're becoming, not who they've been.
+                I am Dessy Ivanova, and I help women step into the identity of who they are becoming, not who they have been.
               </p>
             </div>
           </div>
@@ -120,14 +120,14 @@ export default function About() {
               
               <ScrollFade delay={300}>
                 <p>
-                  It's not about fixing what's broken.<br />
-                  It's about becoming someone entirely new.
+                  It is not about fixing what is broken.<br />
+                  It is about becoming someone entirely new.
                 </p>
               </ScrollFade>
               
               <ScrollFade delay={400}>
                 <p>
-                  Through deep identity work, we don't just shift your mindset.
+                  Through deep identity work, we do not just shift your mindset.
                 </p>
               </ScrollFade>
               
@@ -139,7 +139,7 @@ export default function About() {
               
               <ScrollFade delay={600}>
                 <p className="text-[#C6A86B] font-medium text-xl md:text-2xl">
-                  This is for women ready to stop trying and start being.
+                  This is for women ready to embrace their transformation and start living fully.
                 </p>
               </ScrollFade>
             </div>
@@ -202,6 +202,19 @@ export default function About() {
               <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
                 <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
                 <Image 
+                  src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80"
+                  alt="Woman in serene nature embracing personal growth"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized
+                />
+              </div>
+            </ScrollFade>
+            <ScrollFade delay={300}>
+              <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
+                <Image 
                   src="/girl-with-candle.jpeg"
                   alt="Inner light and transformation"
                   fill
@@ -232,7 +245,7 @@ export default function About() {
           <div className="space-y-10 text-lg md:text-xl leading-relaxed font-light">
             <ScrollFade delay={200}>
               <p>
-                You don't need another strategy.
+                You do not need another strategy.
               </p>
             </ScrollFade>
             
@@ -246,7 +259,7 @@ export default function About() {
             
             <ScrollFade delay={400}>
               <p>
-                One that doesn't rely on willpower, discipline,<br />
+                One that does not rely on willpower, discipline,<br />
                 or pushing through resistance.
               </p>
             </ScrollFade>
@@ -297,14 +310,14 @@ export default function About() {
               
               <ScrollFade delay={400}>
                 <p>
-                  I work with women who are done settling.<br />
-                  Done playing small.
+                  I work with women who are ready to step into their power.<br />
+                  Ready to embrace their full potential.
                 </p>
               </ScrollFade>
               
               <ScrollFade delay={500}>
                 <p>
-                  Done pretending they don't want what they want.
+                  Ready to claim the life they truly desire.
                 </p>
               </ScrollFade>
               
@@ -369,7 +382,7 @@ export default function About() {
           
           <ScrollFade delay={200}>
             <p className="text-xl md:text-2xl lg:text-3xl mb-12 opacity-90 leading-relaxed font-light max-w-3xl mx-auto">
-              The woman you're becoming is already waiting.
+              The woman you are becoming is already waiting.
             </p>
           </ScrollFade>
           

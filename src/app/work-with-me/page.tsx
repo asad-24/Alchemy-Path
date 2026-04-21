@@ -7,18 +7,35 @@ export default function WorkWithMe() {
   return (
     <>
       {/* Hero Section */}
-      <Section narrow className="">
-        <div className="text-center space-y-10">
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight gradient-text">
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image 
+            src="https://images.unsplash.com/photo-1520531158340-44015069e78e?auto=format&fit=crop&w=1920&q=80"
+            alt="Peaceful nature representing transformation journey"
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+            unoptimized
+          />
+          {/* Overlay for text readability */}
+          <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/75 via-[#0B0B0B]/60 to-[#0B0B0B]/80"></div>
+        </div>
+        
+        {/* Animated Glow Overlay */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(198,168,107,0.12)_0%,transparent_70%)] animate-subtle-glow pointer-events-none"></div>
+        
+        <div className="max-w-5xl mx-auto px-8 md:px-16 text-center relative z-10 py-20">
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-12 leading-[1.05] tracking-tight text-balance gradient-text-animated animate-fade-in-scale">
             Work With Me
           </h1>
-          
-          <p className="text-xl md:text-2xl leading-relaxed font-light opacity-70 max-w-2xl mx-auto">
-            You're not here for surface-level shifts.<br />
-            You're here for total transformation.
+          <p className="text-xl md:text-2xl mb-16 text-[#F7F5F2] opacity-90 max-w-2xl mx-auto leading-relaxed font-light animate-fade-in-up">
+            You are not here for surface-level shifts.<br />
+            You are here for total transformation.
           </p>
         </div>
-      </Section>
+      </section>
 
       {/* Gold Divider */}
       <div className="py-2">
@@ -42,11 +59,11 @@ export default function WorkWithMe() {
           <div className="grid  gap-16 items-center">
             {/* Content Column */}
             <div className="space-y-16">
-              {/* What's Included */}
+              {/* What Is Included */}
               <ScrollFade delay={200}>
                 <div className="space-y-8">
                   <h3 className="font-serif text-2xl md:text-4xl tracking-tight">
-                    What's Included
+                    What Is Included
                   </h3>
                   <ul className="space-y-6 opacity-85 font-light">
                     <li className="flex items-start text-base md:text-lg">
@@ -81,8 +98,8 @@ export default function WorkWithMe() {
                   </h3>
                   <div className="space-y-8 opacity-85 font-light text-base md:text-lg leading-relaxed">
                     <p>
-                      You stop operating from the identity of someone trying to get somewhere.<br />
-                      You start being the woman who's already there.
+                      You begin operating from the identity of the woman who has already arrived.<br />
+                      You start being the woman who is already there.
                     </p>
                     
                     <p>
@@ -91,11 +108,11 @@ export default function WorkWithMe() {
                     
                     <p>
                       You make decisions quickly. You trust yourself completely.<br />
-                      You stop second-guessing everything.
+                      You embrace clarity and confidence in every choice.
                     </p>
                     
                     <p>
-                      Your reality shifts to match who you've become.<br />
+                      Your reality shifts to match who you have become.<br />
                       Not through force, but through alignment.
                     </p>
                   </div>
@@ -105,6 +122,35 @@ export default function WorkWithMe() {
           </div>
         </div>
       </Section>
+
+      {/* Gold Divider */}
+      <div className="py-2">
+        <div className="gold-divider"></div>
+      </div>
+
+      {/* Transformation Imagery Section */}
+      <section className="relative min-h-[65vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <Image 
+            src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80"
+            alt="Tranquil nature landscape representing transformation journey"
+            fill
+            className="object-cover"
+            sizes="100vw"
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/75 via-[#0B0B0B]/60 to-[#0B0B0B]/75"></div>
+        </div>
+        
+        <div className="relative z-10 max-w-4xl mx-auto px-8 md:px-16 text-center py-20">
+          <ScrollFade delay={0}>
+            <p className="text-2xl md:text-4xl leading-relaxed text-[#F7F5F2] font-light">
+              Step into the version of yourself who already has<br className="hidden md:block" />
+              everything you have been working towards.
+            </p>
+          </ScrollFade>
+        </div>
+      </section>
 
       {/* Gold Divider */}
       <div className="py-2">
@@ -124,19 +170,19 @@ export default function WorkWithMe() {
             {/* Text Column - Left Side */}
             <div className="space-y-8 text-base md:text-lg leading-relaxed font-light">
               <ScrollFade delay={300}>
-                <p>✧ You're done playing small and pretending you don't want what you want</p>
+                <p>✧ You are ready to embrace your full potential and step into the life you desire</p>
               </ScrollFade>
               <ScrollFade delay={400}>
-                <p>✧ You know there's a bigger version of your life waiting and you're ready to step into it</p>
+                <p>✧ You know there is a bigger version of your life waiting and you are ready to step into it</p>
               </ScrollFade>
               <ScrollFade delay={500}>
-                <p>✧ You're willing to let go of who you've been to become who you're meant to be</p>
+                <p>✧ You are willing to let go of who you have been to become who you are meant to be</p>
               </ScrollFade>
               <ScrollFade delay={600}>
-                <p>✧ You're ready to do deep, transformative work, not just surface-level mindset shifts</p>
+                <p>✧ You are ready to do deep, transformative work, not just surface-level mindset shifts</p>
               </ScrollFade>
               <ScrollFade delay={700}>
-                <p>✧ You're committed to yourself and your transformation</p>
+                <p>✧ You are committed to yourself and your transformation</p>
               </ScrollFade>
             </div>
             
@@ -145,11 +191,12 @@ export default function WorkWithMe() {
               <div className="relative aspect-square rounded-lg overflow-hidden shadow-2xl">
                 <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
                 <Image 
-                  src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88"
-                  alt="Empowered woman ready for transformation"
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+                  alt="Confident woman ready for transformation"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized
                 />
               </div>
             </ScrollFade>
@@ -197,7 +244,7 @@ export default function WorkWithMe() {
           <ScrollFade delay={200}>
             <p className="text-xl md:text-2xl leading-relaxed font-light opacity-80">
               The first step is a conversation.<br />
-              Apply below and I'll be in touch.
+              Apply below and I will be in touch.
             </p>
           </ScrollFade>
           

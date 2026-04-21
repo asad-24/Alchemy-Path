@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -17,8 +18,17 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-8 md:px-16 lg:px-20">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <Link href="/" className="font-serif text-2xl md:text-3xl font-light tracking-tight hover:text-[#C6A86B] transition-colors">
-            The Alchemy Path
+          <Link href="/" className="flex items-center gap-3 group">
+            <Image 
+              src="/logo.svg" 
+              alt="The Alchemy Path" 
+              width={36} 
+              height={36}
+              className="opacity-90 group-hover:opacity-100 transition-opacity"
+            />
+            <span className="font-serif text-2xl md:text-3xl font-light tracking-tight group-hover:text-[#C6A86B] transition-colors">
+              The Alchemy Path
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
