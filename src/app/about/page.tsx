@@ -199,24 +199,11 @@ export default function About() {
             
             {/* Image - Right Side */}
             <ScrollFade delay={300}>
-              <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
+              <div className="relative aspect-4/5 rounded-lg overflow-hidden shadow-2xl">
                 <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
                 <Image 
-                  src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80"
-                  alt="Woman in serene nature embracing personal growth"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  unoptimized
-                />
-              </div>
-            </ScrollFade>
-            <ScrollFade delay={300}>
-              <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
-                <Image 
-                  src="/girl-with-candle.jpeg"
-                  alt="Inner light and transformation"
+                  src="/maam-1.jpeg"
+                  alt="Dessy Ivanova - Personal transformation journey"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -398,6 +385,44 @@ export default function About() {
               </Button>
             </div>
           </ScrollFade>
+        </div>
+      </Section>
+
+      {/* Gold Divider */}
+      <div className="">
+        <div className="gold-divider"></div>
+      </div>
+
+      {/* Personal Images Section */}
+      <Section narrow className="">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <ScrollFade delay={200}>
+              <div className="relative aspect-4/5 rounded-lg overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
+                <Image 
+                  src="/maam-1.jpeg"
+                  alt="Dessy Ivanova - Transformative Coach"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </ScrollFade>
+            
+            <ScrollFade delay={400}>
+              <div className="relative aspect-4/5 rounded-lg overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
+                <Image 
+                  src="/maam-2.jpeg"
+                  alt="Dessy Ivanova - The Alchemy Path"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </ScrollFade>
+          </div>
         </div>
       </Section>
     </>

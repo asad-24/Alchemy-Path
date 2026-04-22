@@ -47,6 +47,44 @@ export default function Home() {
         <div className="gold-divider"></div>
       </div>
 
+      {/* Introduction to The Alchemy Path */}
+      <Section background="dark" narrow className="">
+        <div className="max-w-4xl mx-auto text-center space-y-12">
+          <ScrollFade delay={0}>
+            <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-8 gradient-text tracking-tight">
+              Welcome to The Alchemy Path
+            </h2>
+          </ScrollFade>
+          
+          <div className="space-y-8 text-lg md:text-xl leading-relaxed font-light opacity-90">
+            <ScrollFade delay={200}>
+              <p>
+                This is not another quick-fix programme.<br />
+                This is total transformation.
+              </p>
+            </ScrollFade>
+            
+            <ScrollFade delay={400}>
+              <p>
+                The Alchemy Path is where women come to step into their power,<br className="hidden md:block" />
+                embrace their full potential, and embody the identity of who they are becoming.
+              </p>
+            </ScrollFade>
+            
+            <ScrollFade delay={600}>
+              <p className="text-[#C6A86B] text-xl md:text-2xl font-light">
+                It is time to become the woman you have always known you could be.
+              </p>
+            </ScrollFade>
+          </div>
+        </div>
+      </Section>
+
+      {/* Gold Divider */}
+      <div className="">
+        <div className="gold-divider"></div>
+      </div>
+
       {/* Connection Section */}
       <Section narrow className="">
         <div className="max-w-2xl mx-auto space-y-16 text-center">

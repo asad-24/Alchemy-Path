@@ -166,39 +166,21 @@ export default function WorkWithMe() {
             </h2>
           </ScrollFade>
           
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            {/* Text Column - Left Side */}
-            <div className="space-y-8 text-base md:text-lg leading-relaxed font-light">
-              <ScrollFade delay={300}>
-                <p>✧ You are ready to embrace your full potential and step into the life you desire</p>
-              </ScrollFade>
-              <ScrollFade delay={400}>
-                <p>✧ You know there is a bigger version of your life waiting and you are ready to step into it</p>
-              </ScrollFade>
-              <ScrollFade delay={500}>
-                <p>✧ You are willing to let go of who you have been to become who you are meant to be</p>
-              </ScrollFade>
-              <ScrollFade delay={600}>
-                <p>✧ You are ready to do deep, transformative work, not just surface-level mindset shifts</p>
-              </ScrollFade>
-              <ScrollFade delay={700}>
-                <p>✧ You are committed to yourself and your transformation</p>
-              </ScrollFade>
-            </div>
-            
-            {/* Image Column - Right Side */}
+          <div className="max-w-3xl mx-auto text-center space-y-8 text-base md:text-lg leading-relaxed font-light">
             <ScrollFade delay={300}>
-              <div className="relative aspect-square rounded-lg overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
-                <Image 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
-                  alt="Confident woman ready for transformation"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  unoptimized
-                />
-              </div>
+              <p>✧ You are ready to embrace your full potential and step into the life you desire</p>
+            </ScrollFade>
+            <ScrollFade delay={400}>
+              <p>✧ You know there is a bigger version of your life waiting and you are ready to step into it</p>
+            </ScrollFade>
+            <ScrollFade delay={500}>
+              <p>✧ You are willing to let go of who you have been to become who you are meant to be</p>
+            </ScrollFade>
+            <ScrollFade delay={600}>
+              <p>✧ You are ready to do deep, transformative work, not just surface-level mindset shifts</p>
+            </ScrollFade>
+            <ScrollFade delay={700}>
+              <p>✧ You are committed to yourself and your transformation</p>
             </ScrollFade>
           </div>
         </div>
@@ -273,6 +255,44 @@ export default function WorkWithMe() {
               </a>
             </p>
           </ScrollFade>
+        </div>
+      </Section>
+
+      {/* Gold Divider */}
+      <div className="py-2">
+        <div className="gold-divider"></div>
+      </div>
+
+      {/* Personal Images Section */}
+      <Section background="dark" narrow className="">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <ScrollFade delay={200}>
+              <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
+                <Image 
+                  src="/maam-1.jpeg"
+                  alt="Dessy Ivanova - Transformative Coach"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </ScrollFade>
+            
+            <ScrollFade delay={400}>
+              <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
+                <Image 
+                  src="/maam-2.jpeg"
+                  alt="Dessy Ivanova - The Alchemy Path"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </ScrollFade>
+          </div>
         </div>
       </Section>
     </>
