@@ -19,13 +19,6 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <Image 
-              src="/logo-bg.png" 
-              alt="The Alchemy Path" 
-              width={128} 
-              height={128}
-              className="w-32 h-24 opacity-90 group-hover:opacity-100 transition-opacity"
-            />
             <span className="font-serif text-2xl md:text-3xl font-light tracking-tight text-white group-hover:text-[#C6A86B] transition-colors">
               The Alchemy Path
             </span>

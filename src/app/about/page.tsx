@@ -9,10 +9,10 @@ export default function About() {
       {/* Hero Section */}
       <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
         {/* Layered Background */}
-        <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B] via-[#1a1a1a] to-[#0B0B0B]"></div>
+        <div className="absolute inset-0 bg-[#F7F5F2]"></div>
         
         {/* Animated Glow Overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(198,168,107,0.12)_0%,transparent_70%)] animate-subtle-glow pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(198,168,107,0.08)_0%,transparent_70%)] animate-subtle-glow pointer-events-none"></div>
         
         <div className="max-w-5xl mx-auto px-8 md:px-16 text-center relative z-10 py-20">
           <div className="space-y-10">
@@ -21,14 +21,14 @@ export default function About() {
             </h1>
             
             <div className="max-w-3xl mx-auto space-y-8 animate-fade-in-up">
-              <p className="text-2xl md:text-3xl lg:text-4xl leading-relaxed font-light opacity-90 text-[#F7F5F2]">
+              <p className="text-2xl md:text-3xl lg:text-4xl leading-relaxed font-light opacity-90 text-[#0B0B0B]">
                 You were not meant to shrink.<br />
                 You were meant to transform.
               </p>
               
               <div className="gold-divider my-12"></div>
               
-              <p className="text-lg md:text-xl leading-relaxed font-light opacity-75 max-w-2xl mx-auto text-[#F7F5F2]">
+              <p className="text-lg md:text-xl leading-relaxed font-light opacity-75 max-w-2xl mx-auto text-[#0B0B0B]">
                 I am Dessy Ivanova, and I help women step into the identity of who they are becoming, not who they have been.
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function About() {
       </div>
 
       {/* The Realisation - Centered Text Only */}
-      <Section narrow className="">
+      <Section background="dark" narrow className="">
         <div className="max-w-3xl mx-auto text-center space-y-16">
           <ScrollFade delay={0}>
             <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-12 gradient-text tracking-tight">
@@ -152,64 +152,46 @@ export default function About() {
         <div className="gold-divider"></div>
       </div>
 
-      {/* The Shift - Two Column Layout */}
+      {/* The Shift - Centered Layout */}
       <Section background="dark" narrow className="">
-        <div className="max-w-6xl mx-auto space-y-16">
+        <div className="max-w-4xl mx-auto text-center space-y-12">
           <ScrollFade delay={0}>
-            <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-16 gradient-text tracking-tight text-center">
+            <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-16 gradient-text tracking-tight">
               The Shift
             </h2>
           </ScrollFade>
           
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            {/* Text Content - Left Side */}
-            <div className="space-y-8 text-lg md:text-xl leading-relaxed font-light">
-              <ScrollFade delay={200}>
-                <p>
-                  The shift happened when I stopped trying to <em className="italic">become</em> her.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={300}>
-                <p>
-                  And started <em className="italic">being</em> her.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={400}>
-                <p>
-                  Not a better version of me.<br />
-                  A completely different identity.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={500}>
-                <p>
-                  Someone who didn't question her worth.<br />
-                  Someone who didn't need permission.
-                </p>
-              </ScrollFade>
-              
-              <ScrollFade delay={600}>
-                <p className="text-[#C6A86B]">
-                  Someone who already knew she was enough.
-                </p>
-              </ScrollFade>
-            </div>
+          <div className="space-y-8 text-lg md:text-xl leading-relaxed font-light">
+            <ScrollFade delay={200}>
+              <p>
+                The shift happened when I stopped trying to <em className="italic">become</em> her.
+              </p>
+            </ScrollFade>
             
-            {/* Image - Right Side */}
             <ScrollFade delay={300}>
-              <div className="relative aspect-4/5 rounded-lg overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
-                <Image 
-                  src="/maam-1.jpeg"
-                  alt="Dessy Ivanova - Personal transformation journey"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
-                />
-              </div>
+              <p>
+                And started <em className="italic">being</em> her.
+              </p>
+            </ScrollFade>
+            
+            <ScrollFade delay={400}>
+              <p>
+                Not a better version of me.<br />
+                A completely different identity.
+              </p>
+            </ScrollFade>
+            
+            <ScrollFade delay={500}>
+              <p>
+                Someone who didn't question her worth.<br />
+                Someone who didn't need permission.
+              </p>
+            </ScrollFade>
+            
+            <ScrollFade delay={600}>
+              <p className="text-[#C6A86B]">
+                Someone who already knew she was enough.
+              </p>
             </ScrollFade>
           </div>
         </div>
@@ -392,39 +374,6 @@ export default function About() {
       <div className="">
         <div className="gold-divider"></div>
       </div>
-
-      {/* Personal Images Section */}
-      <Section narrow className="">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <ScrollFade delay={200}>
-              <div className="relative aspect-4/5 rounded-lg overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
-                <Image 
-                  src="/maam-1.jpeg"
-                  alt="Dessy Ivanova - Transformative Coach"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </ScrollFade>
-            
-            <ScrollFade delay={400}>
-              <div className="relative aspect-4/5 rounded-lg overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
-                <Image 
-                  src="/maam-2.jpeg"
-                  alt="Dessy Ivanova - The Alchemy Path"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </ScrollFade>
-          </div>
-        </div>
-      </Section>
     </>
   );
 }

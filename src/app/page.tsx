@@ -27,6 +27,16 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(198,168,107,0.12)_0%,transparent_70%)] animate-subtle-glow pointer-events-none"></div>
         
         <div className="max-w-5xl mx-auto px-8 md:px-16 text-center relative z-10 py-20">
+          {/* Logo */}
+          <div className="mb-8 animate-fade-in-scale">
+            <Image 
+              src="/logo-bg.png" 
+              alt="The Alchemy Path" 
+              width={500} 
+              height={500}
+              className="w-[300px] h-[300px] mx-auto opacity-90"
+            />
+          </div>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-12 leading-[1.05] tracking-tight text-balance gradient-text-animated animate-fade-in-scale">
             You are worthy of the life<br />
             you have been dreaming of.

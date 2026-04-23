@@ -262,39 +262,6 @@ export default function WorkWithMe() {
       <div className="py-2">
         <div className="gold-divider"></div>
       </div>
-
-      {/* Personal Images Section */}
-      <Section background="dark" narrow className="">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <ScrollFade delay={200}>
-              <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
-                <Image 
-                  src="/maam-1.jpeg"
-                  alt="Dessy Ivanova - Transformative Coach"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </ScrollFade>
-            
-            <ScrollFade delay={400}>
-              <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-linear-to-br from-[#0B0B0B]/20 to-transparent z-10"></div>
-                <Image 
-                  src="/maam-2.jpeg"
-                  alt="Dessy Ivanova - The Alchemy Path"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </ScrollFade>
-          </div>
-        </div>
-      </Section>
     </>
   );
 }
