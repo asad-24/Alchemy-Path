@@ -145,7 +145,7 @@ export default function WorkWithMe() {
         <div className="relative z-10 max-w-4xl mx-auto px-8 md:px-16 text-center py-20">
           <ScrollFade delay={0}>
             <p className="text-2xl md:text-4xl leading-relaxed text-[#F7F5F2] font-light">
-              Step into the version of yourself who already has<br className="hidden md:block" />
+              Step into the version of yourself who already has
               everything you have been working towards.
             </p>
           </ScrollFade>

@@ -62,6 +62,10 @@ export default function Home() {
                 This is not another quick-fix programme.<br />
                 This is total transformation.
               </p>
+              <p className="text-base md:text-lg opacity-75 mt-4">
+                Through deep inner alchemy and conscious evolution, we transform from the inside out,<br />
+                shedding old patterns and stepping into our highest selves.
+              </p>
             </ScrollFade>
             
             <ScrollFade delay={400}>

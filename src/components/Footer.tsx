@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
           {/* Brand */}
           <div>
-           <Link href="/" className="flex items-center gap-3 group">
+           <Link href="/" className="flex items-center group">
             <Image 
               src="/logo-bg.png" 
               alt="The Alchemy Path" 
@@ -16,9 +16,6 @@ export default function Footer() {
               height={128}
               className="w-28 h-24 opacity-90 group-hover:opacity-100 transition-opacity"
             />
-            <span className="font-serif text-2xl md:text-3xl font-light tracking-tight text-white group-hover:text-[#C6A86B] transition-colors">
-              The Alchemy Path
-            </span>
           </Link>
 
             <p className="text-sm opacity-60 leading-relaxed font-light mb-6">
